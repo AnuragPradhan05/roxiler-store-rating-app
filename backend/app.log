@@ -1,0 +1,24 @@
+[2026-06-24T12:45:00.070Z] User Registered: 1anurag@gmail.com (USER)
+[2026-06-24T12:45:46.018Z] User Registered: 1admin@gmail.com (ADMIN)
+[2026-06-24T12:46:10.703Z] User Registered: 1owner@gmail.com (OWNER)
+[2026-06-24T12:47:18.089Z] Login Success: 1anurag@gmail.com (USER)
+[2026-06-24T12:48:08.304Z] User 4 fetched store list
+[2026-06-24T12:48:43.816Z] Login Success: 1admin@gmail.com (ADMIN)
+[2026-06-24T12:49:27.418Z] Admin 5 accessed dashboard
+[2026-06-24T12:50:03.042Z] Login Success: 1owner@gmail.com (OWNER)
+[2026-06-24T12:52:43.635Z] Store Created: dinesh Fresh by Admin 6
+[2026-06-24T12:54:11.718Z] Store Created: Reliance Fresh1 by Admin 5
+[2026-06-24T13:21:10.734Z] User 4 fetched store list
+[2026-06-24T13:21:49.091Z] User 4 submitted rating 4 for store 2
+[2026-06-24T13:21:59.898Z] User 4 submitted rating 2 for store 3
+[2026-06-24T13:25:27.096Z] User 4 updated rating to 5 for store 3
+[2026-06-24T13:26:34.375Z] User 4 updated rating to 5 for store 2
+[2026-06-24T13:26:57.443Z] User 4 fetched store list
+[2026-06-24T13:27:52.144Z] Owner 6 accessed dashboard for store 2
+[2026-06-24T13:29:25.533Z] Admin 5 fetched all users
+[2026-06-24T13:30:04.608Z] Admin 5 viewed user 1
+[2026-06-24T13:30:10.185Z] Admin 5 viewed user 6
+[2026-06-24T13:30:21.623Z] Admin 5 viewed user 3
+[2026-06-24T13:30:51.470Z] Admin 5 viewed user 3
+[2026-06-24T13:31:00.068Z] Admin 5 updated user 3
+[2026-06-24T13:31:20.393Z] Admin 5 fetched all stores
