@@ -1,12 +1,19 @@
 const express = require("express");
 const router = express.Router();
 
-const { submitRating, updateRating } = require("../controllers/ratingController");
+const { submitRating, updateRating, getMyRatings } = require("../controllers/ratingController");
 
 const {
     authenticateUser,
     authorizeRoles
 } = require("../middleware/authMiddleware");
+
+router.get(
+  "/my",
+  authenticateUser,
+  authorizeRoles("USER"),
+  getMyRatings
+);
 
 router.post(
     "/",

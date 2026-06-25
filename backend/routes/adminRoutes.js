@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const { getDashboard,getAllUsers,getAllStores, getUserById, updateUser } = require("../controllers/adminController");
+const { getDashboard,getAllUsers,getAllStores, getUserById, updateUser, createUser } = require("../controllers/adminController");
 
 const {
     authenticateUser,
@@ -41,6 +41,13 @@ router.put(
     authenticateUser,
     authorizeRoles("ADMIN"),
     updateUser
+);
+
+router.post(
+    "/users",
+    authenticateUser,
+    authorizeRoles("ADMIN"),
+    createUser
 );
 
 module.exports = router;

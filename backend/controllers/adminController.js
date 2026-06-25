@@ -1,5 +1,6 @@
 const pool = require("../config/db");
 const logger = require("../utils/logger");
+const bcrypt = require("bcrypt");
 
 const getDashboard = async (req, res) => {
     try {
@@ -124,13 +125,43 @@ const getUserById = async (req, res) => {
             });
         }
 
-        logger(`Admin ${req.user.id} viewed user ${id}`);
+        const userData = user.rows[0];
 
-        res.json(user.rows[0]);
+        let ownerRating = null;
+
+        if (userData.role === "OWNER") {
+
+            const ratingResult = await pool.query(
+                `
+                SELECT
+                    COALESCE(AVG(r.rating), 0) AS owner_rating
+                FROM stores s
+                LEFT JOIN ratings r
+                ON s.id = r.store_id
+                WHERE s.owner_id = $1
+                `,
+                [id]
+            );
+
+            ownerRating = Number(
+                ratingResult.rows[0].owner_rating
+            );
+        }
+
+        logger(
+            `Admin ${req.user.id} viewed user ${id}`
+        );
+
+        res.json({
+            ...userData,
+            ownerRating
+        });
 
     } catch (error) {
 
-        logger(`Get User Error: ${error.message}`);
+        logger(
+            `Get User Error: ${error.message}`
+        );
 
         res.status(500).json({
             message: "Server Error"
@@ -211,6 +242,19 @@ const updateUser = async (req, res) => {
             });
         }
 
+        if (
+            address &&
+            (
+                address.trim().length < 5 ||
+                address.trim().length > 400
+            )
+        ) {
+            return res.status(400).json({
+                message:
+                    "Address must be between 5 and 400 characters"
+            });
+        }
+
         const updatedUser = await pool.query(
             `
             UPDATE users
@@ -257,10 +301,153 @@ const updateUser = async (req, res) => {
     }
 };
 
+const createUser = async (req, res) => {
+    try {
+
+        const {
+            name,
+            email,
+            password,
+            address,
+            role
+        } = req.body;
+
+        if (
+            !name ||
+            !email ||
+            !password ||
+            !address ||
+            !role
+        ) {
+            return res.status(400).json({
+                message: "All fields are required"
+            });
+        }
+
+        if (name.length < 20 || name.length > 60) {
+            return res.status(400).json({
+                message:
+                "Name must be between 20 and 60 characters"
+            });
+        }
+
+        if (
+            address &&
+            (
+                address.trim().length < 5 ||
+                address.trim().length > 400
+            )
+        ) {
+            return res.status(400).json({
+                message:
+                    "Address must be between 5 and 400 characters"
+            });
+        }
+
+        const emailRegex =
+            /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailRegex.test(email)) {
+            return res.status(400).json({
+                message: "Invalid Email Format"
+            });
+        }
+
+        if (password.length < 8) {
+            return res.status(400).json({
+                message: "Password must be at least 8 characters"
+            });
+        }
+
+        if (address.trim().length < 5) {
+            return res.status(400).json({
+                message: "Address must be at least 5 characters"
+            });
+        }
+
+        const validRoles = [
+            "ADMIN",
+            "USER",
+            "OWNER"
+        ];
+
+        if (!validRoles.includes(role)) {
+            return res.status(400).json({
+                message: "Invalid Role"
+            });
+        }
+
+        const existingUser = await pool.query(
+            `
+            SELECT *
+            FROM users
+            WHERE email = $1
+            `,
+            [email.trim().toLowerCase()]
+        );
+
+        if (existingUser.rows.length > 0) {
+            return res.status(400).json({
+                message: "Email already exists"
+            });
+        }
+
+        const hashedPassword =
+            await bcrypt.hash(password, 10);
+
+        const newUser = await pool.query(
+            `
+            INSERT INTO users
+            (
+                name,
+                email,
+                password,
+                address,
+                role
+            )
+            VALUES($1,$2,$3,$4,$5)
+            RETURNING
+                id,
+                name,
+                email,
+                address,
+                role
+            `,
+            [
+                name.trim(),
+                email.trim().toLowerCase(),
+                hashedPassword,
+                address.trim(),
+                role
+            ]
+        );
+
+        logger(
+            `Admin ${req.user.id} created ${role} user ${email}`
+        );
+
+        res.status(201).json({
+            message: "User Created Successfully",
+            user: newUser.rows[0]
+        });
+
+    } catch (error) {
+
+        logger(
+            `Create User Error: ${error.message}`
+        );
+
+        res.status(500).json({
+            message: "Server Error"
+        });
+    }
+};
+
 module.exports = {
     getDashboard,
     getAllUsers,
     getAllStores,
     getUserById,
-    updateUser
+    updateUser,
+    createUser
 };

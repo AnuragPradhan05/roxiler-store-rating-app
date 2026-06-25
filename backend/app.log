@@ -22,3 +22,209 @@
 [2026-06-24T13:30:51.470Z] Admin 5 viewed user 3
 [2026-06-24T13:31:00.068Z] Admin 5 updated user 3
 [2026-06-24T13:31:20.393Z] Admin 5 fetched all stores
+[2026-06-25T05:53:12.133Z] Failed Login Attempt: anurag@gmail.com
+[2026-06-25T05:53:52.654Z] Failed Login Attempt: anurag@gmail.com
+[2026-06-25T05:54:05.750Z] Failed Login Attempt: anurag@gmail.com
+[2026-06-25T05:54:46.616Z] Login Success: anurag@gmail.com (USER)
+[2026-06-25T05:55:24.996Z] Login Success: 1admin@gmail.com (ADMIN)
+[2026-06-25T05:55:49.776Z] Login Success: 1owner@gmail.com (OWNER)
+[2026-06-25T05:56:04.553Z] Login Success: 1owner@gmail.com (OWNER)
+[2026-06-25T06:01:02.145Z] Login Success: 1owner@gmail.com (OWNER)
+[2026-06-25T06:05:59.278Z] Login Success: 1owner@gmail.com (OWNER)
+[2026-06-25T06:10:49.001Z] Login Success: admin@gmail.com (ADMIN)
+[2026-06-25T06:10:49.037Z] Admin 2 accessed dashboard
+[2026-06-25T06:10:55.212Z] Admin 2 accessed dashboard
+[2026-06-25T06:11:15.427Z] Login Success: admin@gmail.com (ADMIN)
+[2026-06-25T06:11:15.462Z] Admin 2 accessed dashboard
+[2026-06-25T06:11:22.146Z] Admin 2 accessed dashboard
+[2026-06-25T06:13:54.406Z] Admin 5 fetched all users
+[2026-06-25T06:14:01.949Z] Admin 5 fetched all users
+[2026-06-25T06:14:07.013Z] Admin 5 fetched all users
+[2026-06-25T06:15:53.971Z] Admin 2 accessed dashboard
+[2026-06-25T06:17:31.713Z] Admin 2 accessed dashboard
+[2026-06-25T06:17:33.217Z] Admin 2 fetched all users
+[2026-06-25T06:17:58.683Z] Admin 2 fetched all users
+[2026-06-25T06:18:00.722Z] Admin 2 accessed dashboard
+[2026-06-25T06:24:09.528Z] Admin 2 fetched all users
+[2026-06-25T06:24:13.323Z] Admin 2 viewed user 1
+[2026-06-25T06:24:23.254Z] Admin 2 viewed user 1
+[2026-06-25T06:25:17.980Z] Admin 2 fetched all users
+[2026-06-25T06:25:19.966Z] Admin 2 fetched all users
+[2026-06-25T06:25:21.953Z] Admin 2 fetched all users
+[2026-06-25T06:25:25.957Z] Admin 2 fetched all users
+[2026-06-25T06:25:55.965Z] Admin 2 fetched all users
+[2026-06-25T06:26:01.963Z] Admin 2 fetched all users
+[2026-06-25T06:26:53.968Z] Admin 2 fetched all users
+[2026-06-25T06:26:54.952Z] Admin 2 fetched all users
+[2026-06-25T06:27:02.953Z] Admin 2 fetched all users
+[2026-06-25T06:27:05.957Z] Admin 2 fetched all users
+[2026-06-25T06:27:33.970Z] Admin 2 fetched all users
+[2026-06-25T06:27:43.959Z] Admin 2 fetched all users
+[2026-06-25T06:28:52.968Z] Admin 2 fetched all users
+[2026-06-25T06:29:01.960Z] Admin 2 fetched all users
+[2026-06-25T06:29:21.197Z] Admin 2 viewed user 1
+[2026-06-25T06:29:26.332Z] Admin 2 viewed user 1
+[2026-06-25T06:29:41.718Z] Admin 2 updated user 1
+[2026-06-25T06:29:43.421Z] Admin 2 fetched all users
+[2026-06-25T06:29:48.720Z] Admin 2 viewed user 1
+[2026-06-25T06:29:51.923Z] Admin 2 viewed user 3
+[2026-06-25T06:29:54.124Z] Admin 2 viewed user 3
+[2026-06-25T06:31:57.976Z] Admin 2 fetched all users
+[2026-06-25T06:32:29.707Z] Admin 2 fetched all stores
+[2026-06-25T06:32:40.395Z] Admin 2 fetched all users
+[2026-06-25T06:32:43.331Z] Admin 2 accessed dashboard
+[2026-06-25T06:32:47.043Z] Admin 2 fetched all stores
+[2026-06-25T14:14:29.885Z] Admin 2 accessed dashboard
+[2026-06-25T14:14:30.837Z] Admin 2 fetched all users
+[2026-06-25T14:26:16.129Z] Login Success: anurag@gmail.com (ADMIN)
+[2026-06-25T14:26:16.173Z] Admin 1 accessed dashboard
+[2026-06-25T14:26:40.752Z] Admin 1 fetched all users
+[2026-06-25T14:26:53.222Z] Admin 1 fetched all users
+[2026-06-25T14:28:21.509Z] Login Success: 1anurag@gmail.com (USER)
+[2026-06-25T14:28:21.542Z] User 4 fetched store list
+[2026-06-25T14:28:34.247Z] User 4 submitted rating 4 for store 1
+[2026-06-25T14:28:37.867Z] User 4 fetched store list
+[2026-06-25T14:28:45.576Z] User 4 updated rating to 1 for store 2
+[2026-06-25T14:28:49.092Z] User 4 fetched store list
+[2026-06-25T14:28:51.990Z] User 4 updated rating to 1 for store 3
+[2026-06-25T14:28:54.691Z] User 4 fetched store list
+[2026-06-25T14:32:09.074Z] Login Success: owner@gmail.com (OWNER)
+[2026-06-25T14:32:09.109Z] Owner 3 accessed dashboard for store 1
+[2026-06-25T14:36:19.129Z] Login Success: 1anurag@gmail.com (USER)
+[2026-06-25T14:36:19.164Z] User 4 fetched store list
+[2026-06-25T14:37:01.832Z] User 4 updated rating to 3 for store 2
+[2026-06-25T14:38:37.079Z] Failed Login Attempt: anurag@gmail.com
+[2026-06-25T14:38:49.194Z] Login Success: anurag@gmail.com (ADMIN)
+[2026-06-25T14:38:49.223Z] Admin 1 accessed dashboard
+[2026-06-25T14:38:51.406Z] Admin 1 fetched all users
+[2026-06-25T14:38:52.067Z] Admin 1 accessed dashboard
+[2026-06-25T14:38:52.997Z] Admin 1 fetched all users
+[2026-06-25T14:39:00.823Z] Admin 1 viewed user 1
+[2026-06-25T14:39:04.449Z] Admin 1 fetched all stores
+[2026-06-25T14:39:25.598Z] Admin 1 fetched all users
+[2026-06-25T14:39:52.841Z] Admin 1 viewed user 3
+[2026-06-25T14:39:57.920Z] Admin 1 viewed user 2
+[2026-06-25T14:47:43.989Z] Admin 1 fetched all users
+[2026-06-25T14:47:48.956Z] Admin 1 fetched all users
+[2026-06-25T14:48:46.971Z] Admin 1 fetched all users
+[2026-06-25T14:48:55.960Z] Admin 1 fetched all users
+[2026-06-25T14:49:01.957Z] Admin 1 fetched all users
+[2026-06-25T14:49:33.448Z] Admin 1 fetched all users
+[2026-06-25T14:49:35.663Z] Admin 1 viewed user 3
+[2026-06-25T14:49:40.505Z] Admin 1 viewed user 1
+[2026-06-25T14:49:47.318Z] Admin 1 viewed user 3
+[2026-06-25T14:49:49.533Z] Admin 1 viewed user 6
+[2026-06-25T14:49:59.314Z] Admin 1 viewed user 6
+[2026-06-25T15:00:08.086Z] Admin 1 accessed dashboard
+[2026-06-25T15:00:16.120Z] Admin 1 accessed dashboard
+[2026-06-25T15:01:50.986Z] Admin 1 accessed dashboard
+[2026-06-25T15:03:44.542Z] Create User Error: bcrypt is not defined
+[2026-06-25T15:14:13.251Z] Login Success: 1admin@gmail.com (ADMIN)
+[2026-06-25T15:17:12.808Z] Create User Error: bcrypt is not defined
+[2026-06-25T15:20:59.916Z] Admin 5 created USER user raj@gmail.com
+[2026-06-25T15:21:28.899Z] Admin 1 created OWNER user raja@gmail.com
+[2026-06-25T15:21:30.586Z] Admin 1 accessed dashboard
+[2026-06-25T15:21:33.919Z] Admin 1 fetched all users
+[2026-06-25T15:21:45.374Z] Admin 1 viewed user 8
+[2026-06-25T15:21:49.058Z] Admin 1 viewed user 8
+[2026-06-25T15:21:54.334Z] Admin 1 updated user 8
+[2026-06-25T15:21:55.728Z] Admin 1 fetched all users
+[2026-06-25T15:22:00.360Z] Admin 1 viewed user 7
+[2026-06-25T15:22:05.394Z] Admin 1 accessed dashboard
+[2026-06-25T15:29:46.427Z] Login Success: anurag@gmail.com (ADMIN)
+[2026-06-25T15:29:46.461Z] Admin 1 accessed dashboard
+[2026-06-25T15:30:01.315Z] Admin 1 fetched all users
+[2026-06-25T15:30:04.400Z] Admin 1 fetched all stores
+[2026-06-25T15:30:06.769Z] Admin 1 accessed dashboard
+[2026-06-25T15:43:31.970Z] Admin 1 accessed dashboard
+[2026-06-25T15:43:48.967Z] Admin 1 accessed dashboard
+[2026-06-25T15:43:50.963Z] Admin 1 accessed dashboard
+[2026-06-25T15:43:57.959Z] Admin 1 accessed dashboard
+[2026-06-25T15:45:25.968Z] Admin 1 accessed dashboard
+[2026-06-25T15:45:36.401Z] Admin 1 fetched all users
+[2026-06-25T15:45:37.096Z] Admin 1 accessed dashboard
+[2026-06-25T15:45:38.224Z] Admin 1 fetched all stores
+[2026-06-25T15:45:39.660Z] Admin 1 fetched all users
+[2026-06-25T15:48:02.202Z] Admin 1 accessed dashboard
+[2026-06-25T15:48:12.024Z] Admin 1 fetched all users
+[2026-06-25T15:48:15.072Z] Admin 1 viewed user 1
+[2026-06-25T15:48:43.766Z] User 1 changed password
+[2026-06-25T15:49:08.316Z] Failed Login Attempt: admin@gmail.com
+[2026-06-25T15:49:13.233Z] Failed Login Attempt: 1admin@gmail.com
+[2026-06-25T15:49:24.747Z] Login Success: 1admin@gmail.com (ADMIN)
+[2026-06-25T15:49:24.770Z] Admin 5 accessed dashboard
+[2026-06-25T15:49:42.056Z] Login Success: admin@gmail.com (ADMIN)
+[2026-06-25T15:49:42.086Z] Admin 2 accessed dashboard
+[2026-06-25T15:49:44.483Z] Admin 2 fetched all users
+[2026-06-25T15:49:58.241Z] Login Success: anurag@gmail.com (ADMIN)
+[2026-06-25T15:49:58.264Z] Admin 1 accessed dashboard
+[2026-06-25T16:09:36.249Z] User Registered: p@gmail.com (USER)
+[2026-06-25T16:09:57.873Z] Login Success: p@gmail.com (USER)
+[2026-06-25T16:09:57.920Z] User 9 fetched store list
+[2026-06-25T16:10:09.428Z] User 9 submitted rating 4 for store 1
+[2026-06-25T16:10:13.884Z] User 9 submitted rating 4 for store 2
+[2026-06-25T16:10:18.306Z] User 9 submitted rating 5 for store 3
+[2026-06-25T16:24:04.374Z] Failed Login Attempt: anurag@gmail.com
+[2026-06-25T16:24:31.988Z] Login Success: admin@gmail.com (ADMIN)
+[2026-06-25T16:24:32.031Z] Admin 2 accessed dashboard
+[2026-06-25T16:29:55.318Z] Login Success: admin@gmail.com (ADMIN)
+[2026-06-25T16:29:55.359Z] Admin 2 accessed dashboard
+[2026-06-25T16:31:35.979Z] Admin 2 accessed dashboard
+[2026-06-25T16:32:28.803Z] Admin 2 fetched all users
+[2026-06-25T16:32:36.594Z] Admin 2 accessed dashboard
+[2026-06-25T16:33:55.076Z] Admin 2 fetched all users
+[2026-06-25T16:36:10.225Z] Admin 2 viewed user 1
+[2026-06-25T16:36:14.031Z] Admin 2 viewed user 1
+[2026-06-25T16:36:21.567Z] Admin 2 viewed user 1
+[2026-06-25T16:36:28.458Z] Admin 2 accessed dashboard
+[2026-06-25T16:36:30.200Z] Admin 2 fetched all users
+[2026-06-25T16:36:31.095Z] Admin 2 fetched all stores
+[2026-06-25T16:36:31.904Z] Admin 2 accessed dashboard
+[2026-06-25T16:36:33.194Z] Admin 2 fetched all users
+[2026-06-25T16:37:01.774Z] Admin 2 fetched all stores
+[2026-06-25T16:39:48.975Z] Admin 2 fetched all stores
+[2026-06-25T16:40:10.244Z] Admin 2 fetched all users
+[2026-06-25T16:40:11.071Z] Admin 2 accessed dashboard
+[2026-06-25T16:40:11.840Z] Admin 2 fetched all stores
+[2026-06-25T16:40:12.437Z] Admin 2 fetched all users
+[2026-06-25T16:40:12.998Z] Admin 2 accessed dashboard
+[2026-06-25T16:40:13.597Z] Admin 2 fetched all users
+[2026-06-25T16:40:14.182Z] Admin 2 fetched all stores
+[2026-06-25T16:40:14.877Z] Admin 2 fetched all users
+[2026-06-25T16:40:15.300Z] Admin 2 accessed dashboard
+[2026-06-25T16:40:16.327Z] Admin 2 fetched all users
+[2026-06-25T16:40:17.308Z] Admin 2 accessed dashboard
+[2026-06-25T16:40:28.417Z] Admin 2 fetched all users
+[2026-06-25T16:40:29.523Z] Admin 2 viewed user 1
+[2026-06-25T16:40:31.512Z] Admin 2 viewed user 1
+[2026-06-25T16:40:34.283Z] Admin 2 fetched all stores
+[2026-06-25T16:42:46.830Z] Admin 2 accessed dashboard
+[2026-06-25T16:42:47.613Z] Admin 2 fetched all users
+[2026-06-25T16:42:48.303Z] Admin 2 fetched all stores
+[2026-06-25T16:42:48.981Z] Admin 2 accessed dashboard
+[2026-06-25T16:42:55.402Z] Admin 2 fetched all stores
+[2026-06-25T16:42:56.370Z] Admin 2 fetched all users
+[2026-06-25T16:42:57.023Z] Admin 2 accessed dashboard
+[2026-06-25T16:43:08.676Z] Admin 2 fetched all users
+[2026-06-25T16:43:11.550Z] Admin 2 fetched all stores
+[2026-06-25T16:43:14.116Z] Admin 2 fetched all users
+[2026-06-25T16:45:42.524Z] Login Success: admin@gmail.com (ADMIN)
+[2026-06-25T16:45:42.578Z] Admin 2 accessed dashboard
+[2026-06-25T16:45:52.913Z] Admin 2 fetched all users
+[2026-06-25T16:45:53.858Z] Admin 2 fetched all stores
+[2026-06-25T16:45:54.788Z] Admin 2 fetched all users
+[2026-06-25T16:46:01.537Z] Admin 2 fetched all stores
+[2026-06-25T16:46:11.821Z] Admin 2 fetched all users
+[2026-06-25T16:46:14.067Z] Admin 2 accessed dashboard
+[2026-06-25T16:46:17.653Z] Admin 2 fetched all users
+[2026-06-25T16:47:02.308Z] Login Success: owner@gmail.com (OWNER)
+[2026-06-25T16:47:02.359Z] Owner 3 accessed dashboard for store 1
+[2026-06-25T16:49:42.970Z] Owner 3 accessed dashboard for store 1
+[2026-06-25T16:51:27.079Z] Login Success: 1anurag@gmail.com (USER)
+[2026-06-25T16:51:27.118Z] User 4 fetched store list
+[2026-06-25T16:59:08.969Z] User 4 fetched store list
+[2026-06-25T16:59:39.309Z] User 4 updated rating to 4 for store 1
+[2026-06-25T16:59:44.465Z] User 4 updated rating to 1 for store 1
+[2026-06-25T16:59:47.772Z] User 4 updated rating to 2 for store 1
+[2026-06-25T16:59:50.549Z] User 4 updated rating to 5 for store 1
+[2026-06-25T16:59:54.442Z] User 4 updated rating to 5 for store 3

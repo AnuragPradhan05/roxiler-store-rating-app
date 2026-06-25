@@ -188,7 +188,28 @@ const updateRating = async (req, res) => {
     }
 };
 
+const getMyRatings = async (req, res) => {
+  try {
+    const ratings = await pool.query(
+      `
+      SELECT store_id, rating
+      FROM ratings
+      WHERE user_id = $1
+      `,
+      [req.user.id]
+    );
+
+    res.json(ratings.rows);
+
+  } catch (error) {
+    res.status(500).json({
+      message: "Server Error"
+    });
+  }
+};
+
 module.exports = {
     submitRating,
-    updateRating
+    updateRating,
+    getMyRatings
 };
