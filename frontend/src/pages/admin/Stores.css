@@ -276,3 +276,34 @@ tr:hover {
     overflow-x: auto;
   }
 }
+
+
+.add-store-btn{
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  border:none;
+
+  padding:12px 20px;
+
+  border-radius:12px;
+
+  background:#2563eb;
+  color:white;
+
+  cursor:pointer;
+
+  font-weight:600;
+
+  transition:.2s;
+}
+
+.add-store-btn:hover{
+
+  background:#1d4ed8;
+
+  transform:translateY(-2px);
+
+}

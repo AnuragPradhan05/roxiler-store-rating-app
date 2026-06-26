@@ -388,3 +388,92 @@
 [2026-06-26T06:58:51.646Z] Admin 5 fetched all users
 [2026-06-26T06:58:53.211Z] Admin 5 fetched all stores
 [2026-06-26T06:58:54.769Z] Admin 5 accessed dashboard
+[2026-06-26T10:32:01.598Z] User Registered: anurag@gmail.com (USER)
+[2026-06-26T10:33:17.795Z] Login Success: anurag@gmail.com (USER)
+[2026-06-26T10:33:17.855Z] User 2 fetched store list
+[2026-06-26T10:33:51.139Z] Failed Login Attempt: admin@example.com
+[2026-06-26T10:34:12.084Z] Failed Login Attempt: admin@example.com
+[2026-06-26T10:34:21.215Z] Failed Login Attempt: admin@example.com
+[2026-06-26T10:38:53.890Z] Failed Login Attempt: admin@example.com
+[2026-06-26T10:39:19.903Z] Failed Login Attempt: admin@example.com
+[2026-06-26T10:42:29.741Z] Login Success: admin@example.com (ADMIN)
+[2026-06-26T10:42:29.810Z] Admin 1 accessed dashboard
+[2026-06-26T10:42:33.822Z] Admin 1 fetched all users
+[2026-06-26T10:42:41.948Z] Admin 1 fetched all stores
+[2026-06-26T10:42:43.678Z] Admin 1 fetched all users
+[2026-06-26T10:42:44.256Z] Admin 1 accessed dashboard
+[2026-06-26T10:42:46.044Z] Admin 1 fetched all stores
+[2026-06-26T10:42:47.386Z] Admin 1 accessed dashboard
+[2026-06-26T10:50:23.283Z] Admin 1 fetched all users
+[2026-06-26T10:50:23.284Z] Admin 1 fetched all stores
+[2026-06-26T10:52:07.138Z] Admin 1 fetched all stores
+[2026-06-26T10:52:07.139Z] Admin 1 fetched all users
+[2026-06-26T10:52:14.121Z] Admin 1 fetched all stores
+[2026-06-26T10:52:14.122Z] Admin 1 fetched all users
+[2026-06-26T10:52:41.133Z] Admin 1 fetched all users
+[2026-06-26T10:52:41.134Z] Admin 1 fetched all stores
+[2026-06-26T10:52:47.120Z] Admin 1 fetched all stores
+[2026-06-26T10:52:47.121Z] Admin 1 fetched all users
+[2026-06-26T10:52:49.706Z] Admin 1 fetched all stores
+[2026-06-26T10:52:49.708Z] Admin 1 fetched all users
+[2026-06-26T10:53:33.125Z] Admin 1 fetched all users
+[2026-06-26T10:53:34.589Z] Admin 1 accessed dashboard
+[2026-06-26T10:54:10.794Z] Admin 1 created OWNER user rahul.owner@example.com
+[2026-06-26T10:54:10.814Z] Admin 1 accessed dashboard
+[2026-06-26T10:54:12.803Z] Admin 1 fetched all users
+[2026-06-26T10:54:17.818Z] Admin 1 viewed user 3
+[2026-06-26T10:54:24.219Z] Admin 1 fetched all stores
+[2026-06-26T10:54:24.226Z] Admin 1 fetched all users
+[2026-06-26T10:55:02.161Z] Store Created: Fresh Mart Supermarket by Admin 1
+[2026-06-26T10:55:02.181Z] Admin 1 fetched all stores
+[2026-06-26T10:55:11.615Z] Admin 1 fetched all users
+[2026-06-26T10:55:12.141Z] Admin 1 accessed dashboard
+[2026-06-26T10:55:14.421Z] Admin 1 accessed dashboard
+[2026-06-26T10:55:16.272Z] Admin 1 fetched all users
+[2026-06-26T10:55:16.889Z] Admin 1 fetched all stores
+[2026-06-26T10:55:16.900Z] Admin 1 fetched all users
+[2026-06-26T10:56:18.621Z] Store Created: City Electronics by Admin 1
+[2026-06-26T10:56:18.639Z] Admin 1 fetched all stores
+[2026-06-26T10:56:30.024Z] Admin 1 fetched all users
+[2026-06-26T10:56:32.186Z] Admin 1 accessed dashboard
+[2026-06-26T10:57:11.727Z] Admin 1 created OWNER user priya.owner@example.com
+[2026-06-26T10:57:11.744Z] Admin 1 accessed dashboard
+[2026-06-26T10:57:14.644Z] Admin 1 fetched all users
+[2026-06-26T10:57:17.405Z] Admin 1 viewed user 1
+[2026-06-26T10:57:19.180Z] Admin 1 viewed user 3
+[2026-06-26T10:57:22.712Z] Admin 1 viewed user 4
+[2026-06-26T10:57:27.877Z] Admin 1 viewed user 2
+[2026-06-26T10:58:43.168Z] Login Success: anurag@gmail.com (USER)
+[2026-06-26T10:58:43.216Z] User 2 fetched store list
+[2026-06-26T10:58:52.668Z] User 2 submitted rating 5 for store 1
+[2026-06-26T10:58:55.927Z] User 2 fetched store list
+[2026-06-26T10:58:59.077Z] User 2 submitted rating 5 for store 2
+[2026-06-26T10:59:01.721Z] User 2 fetched store list
+[2026-06-26T10:59:04.138Z] User 2 updated rating to 4 for store 2
+[2026-06-26T10:59:07.393Z] User 2 fetched store list
+[2026-06-26T10:59:24.911Z] User 2 fetched store list
+[2026-06-26T10:59:28.280Z] User 2 updated rating to 3 for store 1
+[2026-06-26T10:59:30.704Z] User 2 fetched store list
+[2026-06-26T11:00:03.011Z] Login Success: rahul.owner@example.com (OWNER)
+[2026-06-26T11:00:03.048Z] Owner 3 accessed dashboard for store 1
+[2026-06-26T11:01:08.452Z] User 3 changed password
+[2026-06-26T11:02:13.055Z] Login Success: admin@example.com (ADMIN)
+[2026-06-26T11:02:13.102Z] Admin 1 accessed dashboard
+[2026-06-26T11:02:15.570Z] Admin 1 fetched all stores
+[2026-06-26T11:02:15.580Z] Admin 1 fetched all users
+[2026-06-26T11:02:17.786Z] Admin 1 fetched all users
+[2026-06-26T11:02:21.195Z] Admin 1 viewed user 3
+[2026-06-26T11:02:31.023Z] Admin 1 fetched all stores
+[2026-06-26T11:02:31.032Z] Admin 1 fetched all users
+[2026-06-26T11:02:36.211Z] Admin 1 fetched all users
+[2026-06-26T11:02:40.259Z] Admin 1 viewed user 1
+[2026-06-26T11:02:42.940Z] Admin 1 viewed user 2
+[2026-06-26T11:02:46.068Z] Admin 1 viewed user 3
+[2026-06-26T11:02:51.849Z] Admin 1 updated user 3
+[2026-06-26T11:02:51.867Z] Admin 1 fetched all users
+[2026-06-26T11:02:53.455Z] Admin 1 viewed user 3
+[2026-06-26T11:02:55.949Z] Admin 1 viewed user 4
+[2026-06-26T11:03:01.206Z] Admin 1 updated user 4
+[2026-06-26T11:03:01.226Z] Admin 1 fetched all users
+[2026-06-26T11:03:03.113Z] Admin 1 viewed user 4
+[2026-06-26T11:03:09.272Z] Admin 1 viewed user 3
