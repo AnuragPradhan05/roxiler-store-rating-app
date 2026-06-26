@@ -97,7 +97,6 @@ Admin@123
 * PostgreSQL
 * JWT Authentication
 * bcrypt
-* Morgan
 
 ---
 
@@ -146,7 +145,7 @@ store-rating-system/
 ## 1. Clone the Repository
 
 ```bash
-git clone <your-github-repository-url>
+git clone https://github.com/AnuragPradhan05/roxiler-store-rating-app.git
 cd store-rating-system
 ```
 
