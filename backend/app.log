@@ -228,3 +228,163 @@
 [2026-06-25T16:59:47.772Z] User 4 updated rating to 2 for store 1
 [2026-06-25T16:59:50.549Z] User 4 updated rating to 5 for store 1
 [2026-06-25T16:59:54.442Z] User 4 updated rating to 5 for store 3
+[2026-06-26T05:23:41.544Z] Failed Login Attempt: anurag@gmail.com
+[2026-06-26T05:23:55.773Z] Login Success: 1admin@gmail.com (ADMIN)
+[2026-06-26T05:23:55.827Z] Admin 5 accessed dashboard
+[2026-06-26T05:25:02.712Z] Admin 5 accessed dashboard
+[2026-06-26T05:25:03.691Z] Admin 5 accessed dashboard
+[2026-06-26T05:25:16.708Z] Admin 5 accessed dashboard
+[2026-06-26T05:25:50.734Z] Admin 5 accessed dashboard
+[2026-06-26T05:25:58.698Z] Admin 5 accessed dashboard
+[2026-06-26T05:26:47.143Z] Admin 5 fetched all stores
+[2026-06-26T05:26:49.984Z] Admin 5 fetched all users
+[2026-06-26T05:27:04.215Z] Admin 5 fetched all stores
+[2026-06-26T05:27:06.639Z] Admin 5 accessed dashboard
+[2026-06-26T05:35:16.136Z] Admin 5 accessed dashboard
+[2026-06-26T05:38:03.709Z] Admin 5 accessed dashboard
+[2026-06-26T05:38:11.694Z] Admin 5 accessed dashboard
+[2026-06-26T05:38:42.096Z] Admin 5 fetched all stores
+[2026-06-26T05:38:45.372Z] Admin 5 fetched all users
+[2026-06-26T05:38:46.476Z] Admin 5 accessed dashboard
+[2026-06-26T05:47:56.592Z] Admin 5 fetched all users
+[2026-06-26T05:47:57.277Z] Admin 5 fetched all stores
+[2026-06-26T05:47:58.014Z] Admin 5 accessed dashboard
+[2026-06-26T05:52:21.488Z] Admin 5 fetched all users
+[2026-06-26T05:52:26.431Z] Admin 5 fetched all stores
+[2026-06-26T05:52:34.377Z] Admin 5 fetched all users
+[2026-06-26T05:52:53.885Z] Admin 5 accessed dashboard
+[2026-06-26T05:54:40.487Z] Admin 5 fetched all users
+[2026-06-26T05:54:41.927Z] Admin 5 fetched all stores
+[2026-06-26T05:54:42.753Z] Admin 5 accessed dashboard
+[2026-06-26T05:54:43.318Z] Admin 5 fetched all users
+[2026-06-26T05:54:44.101Z] Admin 5 fetched all stores
+[2026-06-26T05:55:21.531Z] Login Success: 1owner@gmail.com (OWNER)
+[2026-06-26T05:55:21.577Z] Owner 6 accessed dashboard for store 2
+[2026-06-26T06:00:43.722Z] Owner 6 accessed dashboard for store 2
+[2026-06-26T06:01:15.713Z] Owner 6 accessed dashboard for store 2
+[2026-06-26T06:01:18.696Z] Owner 6 accessed dashboard for store 2
+[2026-06-26T06:01:19.696Z] Owner 6 accessed dashboard for store 2
+[2026-06-26T06:01:22.696Z] Owner 6 accessed dashboard for store 2
+[2026-06-26T06:01:24.697Z] Owner 6 accessed dashboard for store 2
+[2026-06-26T06:01:31.704Z] Owner 6 accessed dashboard for store 2
+[2026-06-26T06:01:35.698Z] Owner 6 accessed dashboard for store 2
+[2026-06-26T06:01:58.709Z] Owner 6 accessed dashboard for store 2
+[2026-06-26T06:02:00.700Z] Owner 6 accessed dashboard for store 2
+[2026-06-26T06:02:04.700Z] Owner 6 accessed dashboard for store 2
+[2026-06-26T06:02:20.712Z] Owner 6 accessed dashboard for store 2
+[2026-06-26T06:02:27.698Z] Owner 6 accessed dashboard for store 2
+[2026-06-26T06:02:46.705Z] Owner 6 accessed dashboard for store 2
+[2026-06-26T06:02:51.703Z] Owner 6 accessed dashboard for store 2
+[2026-06-26T06:02:52.692Z] Owner 6 accessed dashboard for store 2
+[2026-06-26T06:03:33.729Z] Owner 6 accessed dashboard for store 2
+[2026-06-26T06:03:45.714Z] Owner 6 accessed dashboard for store 2
+[2026-06-26T06:07:50.946Z] Login Success: 1anurag@gmail.com (USER)
+[2026-06-26T06:07:50.992Z] User 4 fetched store list
+[2026-06-26T06:09:04.710Z] User 4 fetched store list
+[2026-06-26T06:09:05.693Z] User 4 fetched store list
+[2026-06-26T06:09:46.710Z] User 4 fetched store list
+[2026-06-26T06:09:50.695Z] User 4 fetched store list
+[2026-06-26T06:09:53.693Z] User 4 fetched store list
+[2026-06-26T06:10:50.727Z] User 4 fetched store list
+[2026-06-26T06:10:56.698Z] User 4 fetched store list
+[2026-06-26T06:10:59.698Z] User 4 fetched store list
+[2026-06-26T06:11:00.699Z] User 4 fetched store list
+[2026-06-26T06:11:51.362Z] User 4 fetched store list
+[2026-06-26T06:12:01.282Z] User 4 updated rating to 2 for store 1
+[2026-06-26T06:14:03.712Z] User 4 fetched store list
+[2026-06-26T06:14:06.366Z] User 4 fetched store list
+[2026-06-26T06:18:19.586Z] User 4 fetched store list
+[2026-06-26T06:19:15.006Z] Login Success: 1admin@gmail.com (ADMIN)
+[2026-06-26T06:19:15.049Z] Admin 5 accessed dashboard
+[2026-06-26T06:19:22.223Z] Admin 5 fetched all users
+[2026-06-26T06:19:24.102Z] Admin 5 accessed dashboard
+[2026-06-26T06:19:28.172Z] Admin 5 fetched all stores
+[2026-06-26T06:19:30.226Z] Admin 5 accessed dashboard
+[2026-06-26T06:20:23.716Z] Admin 5 accessed dashboard
+[2026-06-26T06:21:14.705Z] Admin 5 accessed dashboard
+[2026-06-26T06:21:20.700Z] Admin 5 accessed dashboard
+[2026-06-26T06:21:43.705Z] Admin 5 accessed dashboard
+[2026-06-26T06:21:50.700Z] Admin 5 accessed dashboard
+[2026-06-26T06:23:20.710Z] Admin 5 accessed dashboard
+[2026-06-26T06:24:07.708Z] Admin 5 accessed dashboard
+[2026-06-26T06:24:47.190Z] Admin 5 fetched all users
+[2026-06-26T06:26:03.710Z] Admin 5 fetched all users
+[2026-06-26T06:26:25.714Z] Admin 5 fetched all users
+[2026-06-26T06:26:32.701Z] Admin 5 fetched all users
+[2026-06-26T06:27:03.711Z] Admin 5 fetched all users
+[2026-06-26T06:27:12.693Z] Admin 5 fetched all users
+[2026-06-26T06:27:36.711Z] Admin 5 fetched all users
+[2026-06-26T06:27:42.701Z] Admin 5 fetched all users
+[2026-06-26T06:28:23.699Z] Admin 5 fetched all users
+[2026-06-26T06:28:29.704Z] Admin 5 fetched all users
+[2026-06-26T06:28:37.705Z] Admin 5 fetched all users
+[2026-06-26T06:28:42.697Z] Admin 5 fetched all users
+[2026-06-26T06:28:56.697Z] Admin 5 fetched all users
+[2026-06-26T06:29:01.700Z] Admin 5 fetched all users
+[2026-06-26T06:29:11.699Z] Admin 5 fetched all users
+[2026-06-26T06:29:16.702Z] Admin 5 fetched all users
+[2026-06-26T06:29:55.706Z] Admin 5 fetched all users
+[2026-06-26T06:29:57.700Z] Admin 5 fetched all users
+[2026-06-26T06:29:59.692Z] Admin 5 fetched all users
+[2026-06-26T06:30:16.712Z] Admin 5 fetched all users
+[2026-06-26T06:30:26.619Z] Admin 5 fetched all users
+[2026-06-26T06:31:51.766Z] Admin 5 viewed user 1
+[2026-06-26T06:31:56.247Z] Admin 5 viewed user 1
+[2026-06-26T06:32:19.741Z] Admin 5 fetched all users
+[2026-06-26T06:35:04.494Z] Admin 5 viewed user 5
+[2026-06-26T06:35:07.643Z] Admin 5 viewed user 3
+[2026-06-26T06:37:05.702Z] Admin 5 fetched all users
+[2026-06-26T06:37:06.693Z] Admin 5 fetched all users
+[2026-06-26T06:37:11.698Z] Admin 5 fetched all users
+[2026-06-26T06:37:16.695Z] Admin 5 fetched all users
+[2026-06-26T06:37:54.704Z] Admin 5 fetched all users
+[2026-06-26T06:38:11.706Z] Admin 5 fetched all users
+[2026-06-26T06:38:15.706Z] Admin 5 fetched all users
+[2026-06-26T06:38:35.970Z] Admin 5 viewed user 1
+[2026-06-26T06:38:39.953Z] Admin 5 viewed user 4
+[2026-06-26T06:38:43.314Z] Admin 5 viewed user 3
+[2026-06-26T06:38:49.837Z] Admin 5 viewed user 6
+[2026-06-26T06:38:54.622Z] Admin 5 viewed user 8
+[2026-06-26T06:39:33.702Z] Admin 5 fetched all users
+[2026-06-26T06:39:37.911Z] Admin 5 fetched all users
+[2026-06-26T06:39:40.584Z] Admin 5 viewed user 3
+[2026-06-26T06:39:42.632Z] Admin 5 viewed user 6
+[2026-06-26T06:40:43.563Z] Admin 5 fetched all users
+[2026-06-26T06:42:18.706Z] Admin 5 fetched all users
+[2026-06-26T06:42:20.698Z] Admin 5 fetched all users
+[2026-06-26T06:42:23.693Z] Admin 5 fetched all users
+[2026-06-26T06:42:26.493Z] Admin 5 viewed user 3
+[2026-06-26T06:42:31.528Z] Admin 5 viewed user 6
+[2026-06-26T06:42:35.297Z] Admin 5 viewed user 8
+[2026-06-26T06:42:44.172Z] Admin 5 fetched all stores
+[2026-06-26T06:43:23.703Z] Admin 5 fetched all stores
+[2026-06-26T06:43:29.696Z] Admin 5 fetched all stores
+[2026-06-26T06:43:42.701Z] Admin 5 fetched all stores
+[2026-06-26T06:43:45.694Z] Admin 5 fetched all stores
+[2026-06-26T06:44:01.709Z] Admin 5 fetched all stores
+[2026-06-26T06:44:06.695Z] Admin 5 fetched all stores
+[2026-06-26T06:44:14.697Z] Admin 5 fetched all stores
+[2026-06-26T06:44:46.716Z] Admin 5 fetched all stores
+[2026-06-26T06:44:52.699Z] Admin 5 fetched all stores
+[2026-06-26T06:45:14.704Z] Admin 5 fetched all stores
+[2026-06-26T06:45:25.710Z] Admin 5 fetched all stores
+[2026-06-26T06:46:38.741Z] Admin 5 fetched all users
+[2026-06-26T06:46:39.334Z] Admin 5 accessed dashboard
+[2026-06-26T06:46:40.156Z] Admin 5 fetched all users
+[2026-06-26T06:46:40.833Z] Admin 5 fetched all stores
+[2026-06-26T06:46:41.910Z] Admin 5 accessed dashboard
+[2026-06-26T06:53:54.078Z] Admin 5 accessed dashboard
+[2026-06-26T06:54:57.146Z] Admin 5 accessed dashboard
+[2026-06-26T06:55:14.098Z] Admin 5 accessed dashboard
+[2026-06-26T06:57:49.787Z] Admin 5 fetched all stores
+[2026-06-26T06:57:50.326Z] Admin 5 fetched all users
+[2026-06-26T06:57:50.900Z] Admin 5 accessed dashboard
+[2026-06-26T06:57:52.404Z] Admin 5 fetched all users
+[2026-06-26T06:57:53.239Z] Admin 5 fetched all stores
+[2026-06-26T06:58:43.641Z] Admin 5 accessed dashboard
+[2026-06-26T06:58:44.276Z] Admin 5 fetched all users
+[2026-06-26T06:58:44.885Z] Admin 5 fetched all stores
+[2026-06-26T06:58:45.408Z] Admin 5 accessed dashboard
+[2026-06-26T06:58:51.646Z] Admin 5 fetched all users
+[2026-06-26T06:58:53.211Z] Admin 5 fetched all stores
+[2026-06-26T06:58:54.769Z] Admin 5 accessed dashboard

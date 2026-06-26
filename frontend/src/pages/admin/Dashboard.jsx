@@ -4,6 +4,16 @@ import API from "../../api/axios";
 import Navbar from "../../components/Navbar";
 import "./Dashboard.css";
 
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+
+import {
+  FaUsers,
+  FaStore,
+  FaStar,
+  FaPlus,
+  FaUserShield,
+} from "react-icons/fa";
+
 function Dashboard() {
   const [stats, setStats] = useState({
     totalUsers: 0,
@@ -13,6 +23,7 @@ function Dashboard() {
 
   const [loading, setLoading] = useState(true);
   const [showModal, setShowModal] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -88,38 +99,78 @@ function Dashboard() {
 
       <div className="dashboard-container">
 
+        {/* HEADER */}
+
         <div className="dashboard-header">
-          <h1>Admin Dashboard</h1>
+
+          <div>
+            <h1 className="dashboard-title">
+              <FaUserShield />
+              Admin Dashboard
+            </h1>
+
+            <p className="dashboard-subtitle">
+              Manage users, stores and ratings
+            </p>
+          </div>
 
           <button
             className="add-user-btn"
             onClick={() => setShowModal(true)}
           >
-            + Add User
+            <FaPlus />
+            Add User
           </button>
+
         </div>
+
+        {/* STATS CARDS */}
 
         <div className="cards">
 
           <div className="card">
+
+            <div className="card-icon users">
+              <FaUsers />
+            </div>
+
             <h2>{stats.totalUsers}</h2>
+
             <p>Total Users</p>
+
           </div>
 
           <div className="card">
+
+            <div className="card-icon stores">
+              <FaStore />
+            </div>
+
             <h2>{stats.totalStores}</h2>
+
             <p>Total Stores</p>
+
           </div>
 
           <div className="card">
+
+            <div className="card-icon ratings">
+              <FaStar />
+            </div>
+
             <h2>{stats.totalRatings}</h2>
+
             <p>Total Ratings</p>
+
           </div>
 
         </div>
 
+        {/* MODAL */}
+
         {showModal && (
           <div className="modal-overlay">
+
             <div className="modal">
 
               <h2>Create User</h2>
@@ -148,17 +199,34 @@ function Dashboard() {
                 }
               />
 
-              <input
-                type="password"
-                placeholder="Password"
-                value={formData.password}
-                onChange={(e) =>
-                  setFormData({
-                    ...formData,
-                    password: e.target.value,
-                  })
-                }
-              />
+              <div className="password-wrapper">
+
+                <input
+                  type={showPassword ? "text" : "password"}
+                  placeholder="Password"
+                  value={formData.password}
+                  onChange={(e) =>
+                    setFormData({
+                      ...formData,
+                      password: e.target.value,
+                    })
+                  }
+                />
+
+                <span
+                  className="eye-icon"
+                  onClick={() =>
+                    setShowPassword(!showPassword)
+                  }
+                >
+                  {showPassword ? (
+                    <FaEyeSlash />
+                  ) : (
+                    <FaEye />
+                  )}
+                </span>
+
+              </div>
 
               <input
                 type="text"
@@ -187,11 +255,12 @@ function Dashboard() {
               </select>
 
               <div className="modal-buttons">
+
                 <button
                   className="save-btn"
                   onClick={handleCreateUser}
                 >
-                  Create
+                  Create User
                 </button>
 
                 <button
@@ -200,9 +269,11 @@ function Dashboard() {
                 >
                   Cancel
                 </button>
+
               </div>
 
             </div>
+
           </div>
         )}
 

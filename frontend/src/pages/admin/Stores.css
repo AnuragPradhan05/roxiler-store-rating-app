@@ -7,103 +7,223 @@
 .stores-container {
   min-height: 100vh;
   padding: 40px;
-
-  background: linear-gradient(135deg, #f8fafc, #e0e7ff);
-  color: #111827;
+  background: #f8fafc;
 }
 
-/* header */
+/* ==========================
+   HEADER
+========================== */
+
 .stores-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .stores-header h1 {
-  font-size: 28px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 32px;
   font-weight: 700;
-  color: #1f2937;
+  color: #111827;
 }
 
-/* search */
-.search-box {
-  width: 280px;
-  padding: 10px 14px;
+.title-icon {
+  color: #2563eb;
+}
 
-  border-radius: 10px;
+.subtitle {
+  margin-top: 6px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* ==========================
+   SEARCH
+========================== */
+
+.search-wrapper {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  color: #9ca3af;
+
+  pointer-events: none;
+}
+
+.search-box {
+  width: 320px;
+
+  padding: 12px 14px 12px 46px;
+
+  border-radius: 12px;
   border: 1px solid #d1d5db;
+
+  background: white;
 
   outline: none;
 
-  background: white;
+  transition: 0.2s;
 }
 
-/* table */
+.search-box:focus {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 4px rgba(37,99,235,0.1);
+}
+
+/* ==========================
+   TABLE
+========================== */
+
 table {
   width: 100%;
   border-collapse: collapse;
 
   background: white;
-  border-radius: 12px;
+
+  border-radius: 20px;
   overflow: hidden;
 
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.05);
 }
 
 th {
-  background: #2563eb;
-  color: white;
+  background: #f8fafc;
 
-  padding: 14px;
+  color: #374151;
+
   text-align: left;
+
+  padding: 16px;
+
+  font-size: 14px;
+
+  border-bottom: 2px solid #e5e7eb;
 }
 
 td {
-  padding: 14px;
+  padding: 18px 16px;
+
   border-bottom: 1px solid #f1f5f9;
+
+  color: #374151;
+}
+
+tr {
+  transition: 0.2s;
 }
 
 tr:hover {
-  background: #f9fafb;
+  background: #f8fafc;
 }
 
-/* store name highlight */
-.name {
+/* ==========================
+   STORE INFO
+========================== */
+
+.store-name,
+.store-email,
+.store-address {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.store-name {
   font-weight: 600;
-  color: #1d4ed8;
+  color: #111827;
 }
 
-/* rating badge */
-.rating {
-  background: #ecfeff;
-  color: #0369a1;
+.store-name svg {
+  color: #2563eb;
+}
 
-  padding: 4px 10px;
-  border-radius: 8px;
+.store-email svg {
+  color: #10b981;
+}
+
+.store-address {
+  color: #6b7280;
+}
+
+.store-address svg {
+  color: #ef4444;
+}
+
+/* ==========================
+   RATING BADGE
+========================== */
+
+.rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 6px 12px;
+
+  border-radius: 999px;
+
+  background: #fef3c7;
+  color: #d97706;
 
   font-weight: 600;
+  font-size: 13px;
 }
 
-/* pagination */
+.rating-badge svg {
+  font-size: 12px;
+}
+
+/* ==========================
+   PAGINATION
+========================== */
+
 .pagination {
-  margin-top: 20px;
+  margin-top: 24px;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+
+  gap: 14px;
 }
 
 .pagination button {
-  padding: 8px 12px;
+  width: 42px;
+  height: 42px;
 
-  border: none;
-  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  border: 1px solid #dbeafe;
+
+  background: white;
+
+  color: #2563eb;
 
   cursor: pointer;
 
+  transition: 0.2s;
+}
+
+.pagination button:hover:not(:disabled) {
   background: #2563eb;
   color: white;
 }
@@ -113,10 +233,46 @@ tr:hover {
   cursor: not-allowed;
 }
 
-/* empty */
+.pagination span {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* ==========================
+   EMPTY STATE
+========================== */
+
 .empty {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 80px;
+
   color: #6b7280;
-  font-size: 16px;
+
+  font-size: 18px;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px) {
+
+  .stores-container {
+    padding: 20px;
+  }
+
+  .stores-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
 }

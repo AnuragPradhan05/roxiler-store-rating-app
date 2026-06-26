@@ -3,6 +3,19 @@ import Swal from "sweetalert2";
 import API from "../../api/axios";
 import Navbar from "../../components/Navbar";
 import "./Users.css";
+import { FaStar } from "react-icons/fa";
+import {
+  FaUsers,
+  FaSearch,
+  FaEye,
+  FaEdit,
+  FaUser,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaUserTag,
+  FaChevronLeft,
+  FaChevronRight
+} from "react-icons/fa";
 
 function Users() {
   const [users, setUsers] = useState([]);
@@ -45,6 +58,7 @@ function Users() {
         email: res.data.email,
         address: res.data.address,
         role: res.data.role,
+        ownerRating: res.data.averageRating
       });
 
       setEditMode(false);
@@ -96,15 +110,29 @@ function Users() {
       <div className="users-container">
 
         <div className="users-header">
-          <h1>User Management</h1>
 
-          <input
-            type="text"
-            placeholder="Search users..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="search-box"
-          />
+          <div>
+            <h1>
+              <FaUsers className="title-icon" />
+              User Management
+            </h1>
+
+            <p className="subtitle">
+              View and manage all registered users
+            </p>
+          </div>
+
+          <div className="search-wrapper">
+
+            <input
+              type="text"
+              placeholder="Search users..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="search-box"
+            />
+          </div>
+
         </div>
 
         {filteredUsers.length === 0 ? (
@@ -126,20 +154,44 @@ function Users() {
               <tbody>
                 {currentUsers.map((user) => (
                   <tr key={user.id}>
+
                     <td>{user.id}</td>
-                    <td>{user.name}</td>
-                    <td>{user.email}</td>
-                    <td>{user.address}</td>
+
+                    <td>
+                      <div className="user-name">
+                        <FaUser />
+                        {user.name}
+                      </div>
+                    </td>
+
+                    <td>
+                      <div className="user-email">
+                        <FaEnvelope />
+                        {user.email}
+                      </div>
+                    </td>
+
+                    <td>
+                      <div className="user-address">
+                        <FaMapMarkerAlt />
+                        {user.address}
+                      </div>
+                    </td>
+
                     <td>
                       <span className={`role ${user.role}`}>
+                        <FaUserTag />
                         {user.role}
                       </span>
                     </td>
+
                     <td>
+
                       <button
                         className="view-btn"
                         onClick={() => fetchUserDetails(user.id)}
                       >
+                        <FaEye />
                         View
                       </button>
 
@@ -150,9 +202,12 @@ function Users() {
                           setEditMode(true);
                         }}
                       >
+                        <FaEdit />
                         Edit
                       </button>
+
                     </td>
+
                   </tr>
                 ))}
               </tbody>
@@ -164,7 +219,7 @@ function Users() {
                 disabled={currentPage === 1}
                 onClick={() => setCurrentPage((p) => p - 1)}
               >
-                Prev
+                <FaChevronLeft />
               </button>
 
               <span>
@@ -175,7 +230,7 @@ function Users() {
                 disabled={currentPage === totalPages}
                 onClick={() => setCurrentPage((p) => p + 1)}
               >
-                Next
+                <FaChevronRight />
               </button>
             </div>
           </>
@@ -187,7 +242,15 @@ function Users() {
             <div className="modal">
 
               <h2>
-                {editMode ? "Edit User" : "User Details"}
+                {editMode ? (
+                  <>
+                    <FaEdit /> Edit User
+                  </>
+                ) : (
+                  <>
+                    <FaUser /> User Details
+                  </>
+                )}
               </h2>
 
               {editMode ? (
@@ -251,24 +314,49 @@ function Users() {
                   </div>
 
                   <div className="detail-row">
-                    <span>Name</span>
+                    <span>
+                      <FaUser />
+                      Name
+                    </span>
                     <strong>{selectedUser.name}</strong>
                   </div>
 
                   <div className="detail-row">
-                    <span>Email</span>
+                    <span>
+                      <FaEnvelope />
+                      Email
+                    </span>
                     <strong>{selectedUser.email}</strong>
                   </div>
 
                   <div className="detail-row">
-                    <span>Address</span>
+                    <span>
+                      <FaMapMarkerAlt />
+                      Address
+                    </span>
                     <strong>{selectedUser.address}</strong>
                   </div>
 
                   <div className="detail-row">
-                    <span>Role</span>
+                    <span>
+                      <FaUserTag />
+                      Role
+                    </span>
                     <strong>{selectedUser.role}</strong>
                   </div>
+                      {selectedUser.role === "OWNER" && (
+                        <div className="detail-row">
+                          <span>
+                            <FaStar />
+                            Store Rating
+                          </span>
+
+                          <strong className="rating-badge">
+                            <FaStar />
+                            {selectedUser.ownerRating || 0}
+                          </strong>
+                        </div>
+                      )}
                 </>
               )}
 

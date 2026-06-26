@@ -3,6 +3,12 @@ import Swal from "sweetalert2";
 import API from "../../api/axios";
 import Navbar from "../../components/Navbar";
 import "./StoreList.css";
+import {
+  FaStore,
+  FaSearch,
+  FaStar,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 
 function StoreList() {
   const [stores, setStores] = useState([]);
@@ -92,15 +98,27 @@ function StoreList() {
       <div className="store-container">
 
         <div className="store-header">
-          <h1>Explore Stores</h1>
+          <div>
+            <h1>
+              <FaStore className="title-icon" />
+              Explore Stores
+            </h1>
 
-          <input
-            type="text"
-            placeholder="Search by name or address..."
-            className="search-box"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
+            <p className="subtitle">
+              Discover stores and rate your experience
+            </p>
+          </div>
+
+          <div className="search-wrapper">
+
+            <input
+              type="text"
+              placeholder="Search stores..."
+              className="search-box"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+          </div>
         </div>
 
         {filteredStores.length === 0 ? (
@@ -120,11 +138,25 @@ function StoreList() {
               <tbody>
                 {currentStores.map((store) => (
                   <tr key={store.id}>
-                    <td className="name">{store.name}</td>
-                    <td>{store.address}</td>
+                    <td>
+                      <div className="store-name">
+                        <FaStore />
+                        {store.name}
+                      </div>
+                    </td>
 
                     <td>
-                      ⭐ {Number(store.average_rating).toFixed(1)}
+                      <div className="store-address">
+                        <FaMapMarkerAlt />
+                        {store.address}
+                      </div>
+                    </td>
+
+                    <td>
+                      <span className="rating-badge">
+                        <FaStar />
+                        {Number(store.average_rating).toFixed(1)}
+                      </span>
                     </td>
 
                     <td>

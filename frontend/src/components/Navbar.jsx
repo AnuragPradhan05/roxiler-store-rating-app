@@ -3,7 +3,9 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import Swal from "sweetalert2";
 import API from "../api/axios";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import "./Navbar.css";
+import { FaUser } from "react-icons/fa";
 
 function Navbar() {
   const { role, logout } = useAuth();
@@ -11,6 +13,12 @@ function Navbar() {
 
   const [showMenu, setShowMenu] = useState(false);
   const [showPasswordModal, setShowPasswordModal] = useState(false);
+
+  const [showCurrentPassword, setShowCurrentPassword] =
+    useState(false);
+
+  const [showNewPassword, setShowNewPassword] =
+    useState(false);
 
   const [passwordData, setPasswordData] = useState({
     currentPassword: "",
@@ -22,7 +30,7 @@ function Navbar() {
 
     Swal.fire({
       icon: "success",
-      title: "Logged out",
+      title: "Logged Out",
       timer: 1000,
       showConfirmButton: false,
     });
@@ -32,7 +40,10 @@ function Navbar() {
 
   const handleChangePassword = async () => {
     try {
-      await API.put("/auth/change-password", passwordData);
+      await API.put(
+        "/auth/change-password",
+        passwordData
+      );
 
       Swal.fire({
         icon: "success",
@@ -46,50 +57,79 @@ function Navbar() {
         newPassword: "",
       });
 
+      setShowCurrentPassword(false);
+      setShowNewPassword(false);
+
       setShowPasswordModal(false);
     } catch (error) {
-      Swal.fire("Error", "Password update failed", "error");
+      Swal.fire({
+        icon: "error",
+        title: "Update Failed",
+        text:
+          error.response?.data?.message ||
+          "Password update failed",
+      });
     }
+  };
+
+  const closeModal = () => {
+    setShowPasswordModal(false);
+
+    setPasswordData({
+      currentPassword: "",
+      newPassword: "",
+    });
+
+    setShowCurrentPassword(false);
+    setShowNewPassword(false);
   };
 
   return (
     <>
       <nav className="navbar">
-
         <div className="logo">
           Store<span>Sense</span>
         </div>
 
         <div className="nav-links">
-
           {role === "ADMIN" && (
             <>
-              <Link to="/admin/dashboard">Dashboard</Link>
-              <Link to="/admin/users">Users</Link>
-              <Link to="/admin/stores">Stores</Link>
+              <Link to="/admin/dashboard">
+                Dashboard
+              </Link>
+
+              <Link to="/admin/users">
+                Users
+              </Link>
+
+              <Link to="/admin/stores">
+                Stores
+              </Link>
             </>
           )}
 
           {role === "OWNER" && (
-            <Link to="/owner/dashboard">Dashboard</Link>
+            <Link to="/owner/dashboard">
+              Dashboard
+            </Link>
           )}
 
           {role === "USER" && (
-            <Link to="/stores">Stores</Link>
+            <Link to="/stores">
+              Stores
+            </Link>
           )}
 
           <div className="profile">
-
             <button
               className="profile-btn"
               onClick={() => setShowMenu(!showMenu)}
             >
-              👤
+              <FaUser />
             </button>
 
             {showMenu && (
               <div className="dropdown">
-
                 <button
                   onClick={() => {
                     setShowPasswordModal(true);
@@ -99,64 +139,111 @@ function Navbar() {
                   Change Password
                 </button>
 
-                <button onClick={handleLogout}>
+                <button
+                  onClick={handleLogout}
+                >
                   Logout
                 </button>
-
               </div>
             )}
           </div>
-
         </div>
       </nav>
 
-      {/* Password Modal */}
       {showPasswordModal && (
         <div className="modal-overlay">
           <div className="modal">
-
             <h2>Change Password</h2>
 
-            <input
-              type="password"
-              placeholder="Current password"
-              value={passwordData.currentPassword}
-              onChange={(e) =>
-                setPasswordData({
-                  ...passwordData,
-                  currentPassword: e.target.value,
-                })
-              }
-            />
+            <div className="password-wrapper">
+              <input
+                type={
+                  showCurrentPassword
+                    ? "text"
+                    : "password"
+                }
+                placeholder="Current Password"
+                value={
+                  passwordData.currentPassword
+                }
+                onChange={(e) =>
+                  setPasswordData({
+                    ...passwordData,
+                    currentPassword:
+                      e.target.value,
+                  })
+                }
+              />
 
-            <input
-              type="password"
-              placeholder="New password"
-              value={passwordData.newPassword}
-              onChange={(e) =>
-                setPasswordData({
-                  ...passwordData,
-                  newPassword: e.target.value,
-                })
-              }
-            />
+              <span
+                className="eye-icon"
+                onClick={() =>
+                  setShowCurrentPassword(
+                    !showCurrentPassword
+                  )
+                }
+              >
+                {showCurrentPassword ? (
+                  <FaEyeSlash />
+                ) : (
+                  <FaEye />
+                )}
+              </span>
+            </div>
+
+            <div className="password-wrapper">
+              <input
+                type={
+                  showNewPassword
+                    ? "text"
+                    : "password"
+                }
+                placeholder="New Password"
+                value={
+                  passwordData.newPassword
+                }
+                onChange={(e) =>
+                  setPasswordData({
+                    ...passwordData,
+                    newPassword:
+                      e.target.value,
+                  })
+                }
+              />
+
+              <span
+                className="eye-icon"
+                onClick={() =>
+                  setShowNewPassword(
+                    !showNewPassword
+                  )
+                }
+              >
+                {showNewPassword ? (
+                  <FaEyeSlash />
+                ) : (
+                  <FaEye />
+                )}
+              </span>
+            </div>
 
             <div className="modal-buttons">
               <button
                 className="save-btn"
-                onClick={handleChangePassword}
+                onClick={
+                  handleChangePassword
+                }
               >
                 Update
               </button>
 
               <button
                 className="close-btn"
-                onClick={() => setShowPasswordModal(false)}
+                onClick={closeModal}
               >
                 Cancel
               </button>
             </div>
-
           </div>
         </div>
       )}

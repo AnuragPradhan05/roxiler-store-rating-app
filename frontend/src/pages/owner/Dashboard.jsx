@@ -3,6 +3,15 @@ import Swal from "sweetalert2";
 import API from "../../api/axios";
 import Navbar from "../../components/Navbar";
 import "./Dashboard.css";
+import {
+  FaStore,
+  FaStar,
+  FaUsers,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaChevronLeft,
+  FaChevronRight,
+} from "react-icons/fa";
 
 function Dashboard() {
   const [data, setData] = useState(null);
@@ -53,19 +62,32 @@ function Dashboard() {
         <div className="owner-cards">
 
           <div className="owner-card">
+            <div className="card-icon">
+              <FaStore />
+            </div>
+
             <h3>Store Name</h3>
             <p>{data.store.name}</p>
           </div>
 
-          <div className="owner-card highlight">
-            <h3>Avg Rating</h3>
-            <p>⭐ {data.averageRating.toFixed(1)}</p>
-          </div>
 
-          <div className="owner-card">
-            <h3>Total Ratings</h3>
-            <p>{data.totalRatings}</p>
-          </div>
+            <div className="owner-card highlight">
+              <div className="card-icon rating-icon">
+                <FaStar />
+              </div>
+
+              <h3>Average Rating</h3>
+              <p>{data.averageRating.toFixed(1)}</p>
+            </div>
+
+            <div className="owner-card">
+              <div className="card-icon users-icon">
+                <FaUsers />
+              </div>
+
+              <h3>Total Ratings</h3>
+              <p>{data.totalRatings}</p>
+            </div>
 
         </div>
 
@@ -75,8 +97,23 @@ function Dashboard() {
           <h2>Store Information</h2>
 
           <div className="info-grid">
-            <p><strong>Email:</strong> {data.store.email}</p>
-            <p><strong>Address:</strong> {data.store.address}</p>
+
+            <div className="info-item">
+              <FaEnvelope className="info-icon" />
+              <div>
+                <span>Email</span>
+                <strong>{data.store.email}</strong>
+              </div>
+            </div>
+
+            <div className="info-item">
+              <FaMapMarkerAlt className="info-icon" />
+              <div>
+                <span>Address</span>
+                <strong>{data.store.address}</strong>
+              </div>
+            </div>
+
           </div>
 
         </div>
@@ -103,9 +140,10 @@ function Dashboard() {
                   <td>{user.name}</td>
                   <td>{user.email}</td>
                   <td>
-                    <span className="rating">
-                      ⭐ {user.rating}
-                    </span>
+                  <span className="rating">
+                    <FaStar />
+                    {user.rating}
+                  </span>
                   </td>
                 </tr>
               ))}
@@ -118,7 +156,7 @@ function Dashboard() {
               disabled={currentPage === 1}
               onClick={() => setCurrentPage((p) => p - 1)}
             >
-              Prev
+              <FaChevronLeft />
             </button>
 
             <span>
@@ -129,7 +167,7 @@ function Dashboard() {
               disabled={currentPage === totalPages}
               onClick={() => setCurrentPage((p) => p + 1)}
             >
-              Next
+              <FaChevronRight />
             </button>
           </div>
 

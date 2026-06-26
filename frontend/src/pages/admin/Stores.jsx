@@ -4,6 +4,16 @@ import API from "../../api/axios";
 import Navbar from "../../components/Navbar";
 import "./Stores.css";
 
+import {
+  FaStore,
+  FaSearch,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaStar,
+  FaChevronLeft,
+  FaChevronRight
+} from "react-icons/fa";
+
 function Stores() {
   const [stores, setStores] = useState([]);
   const [search, setSearch] = useState("");
@@ -42,15 +52,29 @@ function Stores() {
       <div className="stores-container">
 
         <div className="stores-header">
-          <h1>Store Directory</h1>
 
-          <input
-            type="text"
-            placeholder="Search by name or address..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="search-box"
-          />
+          <div>
+            <h1>
+              <FaStore className="title-icon" />
+              Store Directory
+            </h1>
+
+            <p className="subtitle">
+              View all registered stores and ratings
+            </p>
+          </div>
+
+          <div className="search-wrapper">
+
+            <input
+              type="text"
+              placeholder="Search stores..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="search-box"
+            />
+          </div>
+
         </div>
 
         {filteredStores.length === 0 ? (
@@ -72,12 +96,31 @@ function Stores() {
                 {currentStores.map((store) => (
                   <tr key={store.id}>
                     <td>{store.id}</td>
-                    <td className="name">{store.name}</td>
-                    <td>{store.email}</td>
-                    <td>{store.address}</td>
                     <td>
-                      <span className="rating">
-                        ⭐ {Number(store.average_rating).toFixed(1)}
+                      <div className="store-name">
+                        <FaStore />
+                        {store.name}
+                      </div>
+                    </td>
+
+                    <td>
+                      <div className="store-email">
+                        <FaEnvelope />
+                        {store.email}
+                      </div>
+                    </td>
+
+                    <td>
+                      <div className="store-address">
+                        <FaMapMarkerAlt />
+                        {store.address}
+                      </div>
+                    </td>
+
+                    <td>
+                      <span className="rating-badge">
+                        <FaStar />
+                        {Number(store.average_rating).toFixed(1)}
                       </span>
                     </td>
                   </tr>
@@ -91,7 +134,7 @@ function Stores() {
                 disabled={currentPage === 1}
                 onClick={() => setCurrentPage((p) => p - 1)}
               >
-                Prev
+                <FaChevronLeft />
               </button>
 
               <span>
@@ -102,7 +145,7 @@ function Stores() {
                 disabled={currentPage === totalPages}
                 onClick={() => setCurrentPage((p) => p + 1)}
               >
-                Next
+                <FaChevronRight />
               </button>
             </div>
           </>
